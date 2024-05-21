@@ -1,0 +1,53 @@
+= Habitual - The practice better habits app (proof of concept)
+:toc: left
+:icons: font
+:toclevels: 4
+:imagesdir: adoc_images
+:source-highlighter: rouge
+:source-linenums-option: true
+
+This document is part of the versioned code used to deliver my web app entry to the hackathon.
+
+All rights are reserved.
+
+== PURPOSE
+[.text-center]
+*_Document proof of concept for a new web app -- "Habitual"_*
+
+== WIP CHECKLIST
+
+[%interactive]
+.DO NEXT
+* [x] start github repor (private for now), gitflow workflow, labels and issue templates
+* [x] setup tailwind and initialize svelte kit project using svelte 5 preview w demo app
+* [x] converted readme from md to adoc and added image directory; let's explore including html version into the entry app
+* [ ] outline the adoc for scoping and deploying an entry for the hackathon with an eye to continue project in another context after getting feedback
+* [ ] add pre dev script with bun script to convert adoc to html AND include into a page in the web app 
+* [ ] add some simple todo issues for the required in scope requirements for submission
+* [ ] 
+
+
+== Developing with bun and svelte-kit
+
+Once you've created a project and installed dependencies with `bun install`, start a development server:
+
+Note: remove the -b to run in node environment
+
+```bash
+bun -b run dev
+
+# or start the server and open the app in a new browser tab
+bun -b run dev --open
+```
+
+== Building
+
+To create a production version of your app:
+
+```bash
+bun -b run build
+```
+
+You can preview the production build with `bun -b run preview`.
+// TODO add notes after we do this
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
