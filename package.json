@@ -1,6 +1,6 @@
 {
   "name": "habitual",
-  "version": "0.0.1-setup.1",
+  "version": "0.0.1-setup.2",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
