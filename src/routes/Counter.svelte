@@ -3,13 +3,15 @@
 
   let count = 0;
 
-  const displayed_count = spring();
-  $: displayed_count.set(count);
-  $: offset = modulo($displayed_count, 1);
+  const displayedCount = spring();
+  $: displayedCount.set(count);
+  $: offset = modulo($displayedCount, 1);
 
   /**
-   * @param {number} n
-   * @param {number} m
+   * Return the modulo of two numbers
+   * @param {number} n - The dividend
+   * @param {number} m - The divisor
+   * @return {number} The result of the modulo operation
    */
   function modulo(n, m) {
     // handle negative numbers
@@ -26,8 +28,8 @@
 
   <div class="counter-viewport">
     <div class="counter-digits" style="transform: translate(0, {100 * offset}%)">
-      <strong class="hidden" aria-hidden="true">{Math.floor($displayed_count + 1)}</strong>
-      <strong>{Math.floor($displayed_count)}</strong>
+      <strong class="hidden" aria-hidden="true">{Math.floor($displayedCount + 1)}</strong>
+      <strong>{Math.floor($displayedCount)}</strong>
     </div>
   </div>
 

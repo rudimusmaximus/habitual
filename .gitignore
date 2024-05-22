@@ -1,5 +1,6 @@
-# local zellij layour file
-workspace.kdl
+# local zellij layour file including for fun (requires zellij to be installed)
+# command is zellij --lyout workspace.kdl if using this file
+# workspace.kdl
 
 # Ignore files written by nvim plugins in my local project
 fugitive:

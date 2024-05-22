@@ -2,8 +2,8 @@
 module.exports = {
   root: true,
   extends: [
-    'prettier',
     'eslint:recommended',
+    'prettier',
     'plugin:jsdoc/recommended',
     'google',
     'plugin:tailwindcss/recommended',
@@ -21,18 +21,26 @@ module.exports = {
   },
   plugins: ['jsdoc', 'tailwindcss'],
   rules: {
-    // severityCodes: (0 = off, 1 = warn, 2 = error )
+    // severity Codes: (0 = off, 1 = warn, 2 = error )
+    'camelcase': 1,
+    'require-jsdoc': 1,
     'prefer-const': 1,
     'ignoreReadBeforeAssign': 0,
-    'jsdoc/require-returns': 0,
+    'jsdoc/require-returns': 1,
+    'jsdoc/require-param': 1,
+    'jsdoc/require-param-description': 1,
+    'jsdoc/require-param-name': 2,
+    'jsdoc/require-param-type': 1,
+    'jsdoc/require-returns-description': 1,
+    'jsdoc/require-returns-type': 1,
+    'valid-jsdoc': 1,
     'object-curly-spacing': [2, 'never'], // internal spacing
-
-    // RCM modernized rules for line lengths should be between 100 and 120 rather than 80;
+    // Modernized rules for line lengths should be between 100 and 120 rather than 80;
     // Provides flexibility for URLs, strings, and regular expressions
     'max-len': [
       'error',
       {
-        code: 93,
+        code: 111,
         ignoreUrls: true,
         ignoreComments: true,
         ignoreRegExpLiterals: true,
@@ -41,7 +49,7 @@ module.exports = {
       },
     ],
 
-    // these should match the tailwindcss/recommended edit if needed
+    // TODO verify these still match the tailwindcss/recommended edit if needed
     'tailwindcss/classnames-order': 1,
     'tailwindcss/enforces-negative-arbitrary-values': 1,
     'tailwindcss/enforces-shorthand': 1,
