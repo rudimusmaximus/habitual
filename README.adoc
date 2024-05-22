@@ -1,4 +1,4 @@
-= Habitual - The practice better habits app (proof of concept)
+= Habitual - The practice better habits app - a proof of concept
 :toc: left
 :icons: font
 :toclevels: 4
@@ -17,15 +17,28 @@ All rights are reserved.
 == WIP CHECKLIST
 
 [%interactive]
-.DO NEXT
+.DO NEXT SETUP
 * [x] start github repor (private for now), gitflow workflow, labels and issue templates
 * [x] setup tailwind and initialize svelte kit project using svelte 5 preview w demo app
 * [x] converted readme from md to adoc and added image directory; let's explore including html version into the entry app
-* [ ] outline the adoc for scoping and deploying an entry for the hackathon with an eye to continue project in another context after getting feedback
-* [ ] add pre dev script with bun script to convert adoc to html AND include into a page in the web app 
-* [ ] add some simple todo issues for the required in scope requirements for submission
-* [ ] 
+* [x] setup config and test by applying format and style fixes and run dev
+* [ ] update all apps and test dev
+* [ ] make svelte demo app style compliant and lint free
+* [ ] test build and preview
 
+[%interactive]
+.DO NEXT DESIGN
+* [ ] outline the adoc for scoping and deploying an entry for the hackathon with an eye to continue project in another context after getting feedback
+* [ ] add pre dev script with bun script to convert adoc to html AND include into a page in the web app
+* [ ] add some simple todo issues for the required in scope requirements for submission
+
+[%interactive]
+.DO NEXT IMPLEMENTATION
+* [ ]
+* [ ]
+* [ ]
+* [ ]
+* [ ]
 
 == Developing with bun and svelte-kit
 

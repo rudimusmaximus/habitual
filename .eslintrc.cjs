@@ -23,7 +23,7 @@ module.exports = {
   rules: {
     // severityCodes: (0 = off, 1 = warn, 2 = error )
     'prefer-const': 1,
-    ignoreReadBeforeAssign: 0,
+    'ignoreReadBeforeAssign': 0,
     'jsdoc/require-returns': 0,
     'object-curly-spacing': [2, 'never'], // internal spacing
 
