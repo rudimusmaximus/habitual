@@ -1,0 +1,79 @@
+= Habitual - The practice better habits app
+:toc: left
+:icons: font
+:toclevels: 4
+:imagesdir: adoc_images
+:source-highlighter: rouge
+:source-linenums-option: true
+
+This document is part of the version controlled code used to deliver my web app entry to the link:https://hackathon.edgedb.com[EdgeDB + Vercel Hackathon]. All rights are reserved.
+This is my first hackathon entry; I will continue to develop it as a way to shake out what I indent to be my preferred stack. Please review the repo and the nice dev flow and commit history.
+
+== PURPOSE
+[.text-center]
+*_Document and deliver proof of concept for a new web app -- "Habitual"_*
+
+== WIP - Work In Progress Checklists
+
+[%interactive]
+.DO NEXT SETUP
+* [x] start GitHub repository (private for now), Gitflow workflow, labels and issue templates
+* [x] setup tailwind and initialize svelte kit project using svelte 5 preview w demo app
+* [x] converted read me from markdown to ASCII doc and added image directory; let's explore including html version into the entry app
+* [x] setup formatting and styling configuration and test by applying format and style fixes and run dev
+* [ ] update all apps and test dev
+* [ ] make svelte demo app style compliant and lint free
+* [ ] test build and preview
+
+[%interactive]
+.DO NEXT DESIGN
+* [ ] outline the README.adoc for scoping and deploying an entry for the hackathon with an eye to continue project in another context after getting feedback
+* [ ] add pre dev script with bun script to convert adoc to html AND include into a page in the web app
+* [ ] add some issues for the required in scope requirements for submission
+
+[%interactive]
+.DO NEXT IMPLEMENTATION
+* [ ]
+* [ ]
+* [ ]
+* [ ]
+* [ ]
+
+== Developing with bun and svelte-kit
+
+Once you've created a project and installed dependencies with `bun install`, start a development server:
+
+Note: bun run without the -b flag will default to run in node environment. You can still use -b for say scripts or installs and updates.
+
+```bash
+bun run dev
+
+# or start the server and open the app in a new browser tab
+bun run dev --open
+```
+
+== Building
+
+To create a production version of your app:
+
+```bash
+bun run build
+```
+
+You can preview the production build with `bun run preview`.
+// TODO add notes after we do this
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+== LESSONS LEARNED
+
+=== During Setup
+
+=== During Design
+
+=== During Implementation
+
+== USER FEEDBACK
+
+== CONCLUSION
+Thanks for reviewing my submission! I'm a big fan of both sponsors and look forward to your feedback.
+

@@ -1,0 +1,66 @@
+/**
+ * Zellij workspace configuration file.
+ * Here we define the layout of the workspace and the commands that will be
+ * executed in each tab and/or pan assuming bash is the default shell.
+ */
+
+layout {
+    tab name="dashboard Habitual proof of concept" focus=true {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane split_direction="vertical" {
+            pane stacked=true {
+                pane {
+                    name "Run git log -4"
+                    size "60%"
+                    cwd "~/project/habitual"
+                    command "git"
+                    args "log" "-4"
+                }
+                pane {
+                    name "terminal"
+                    cwd "~/project/habitual"
+                }
+            }
+            pane split_direction="horizontal" {
+                pane {
+                    name "Get Project Info"
+                    size "30%"
+                    cwd "~/project/habitual"
+                    command "bash"
+                    args "-c" "jq '{name: .name, description: .description, version: .version, scripts: .scripts | keys}' package.json"
+                }
+                pane {
+                    name "Run git status"
+                    size "50%"
+                    cwd "~/project/habitual"
+                    command "git"
+                    args "status"
+                }
+                pane {
+                    name "Run git log --oneline -9"
+                    size "20%"
+                    cwd "~/project/habitual"
+                    command "git"
+                    args "log" "--oneline" "-9"
+                }
+            }
+        }
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="nvim session  habitual" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane {
+            name "habitual"
+            cwd "~/project/habitual"
+            command "nvim"
+        }
+    }
+}
+
+
