@@ -1,0 +1,48 @@
+= The Practice Better Habits Blog
+:toc: left
+:icons: font
+:toclevels: 4
+:imagesdir: adoc_images
+:source-highlighter: rouge
+:source-linenums-option: true
+
+== May 23, 2024 ~ raul flores jr
+
+=== Why Vercel with EdgeDB?
+
+Vercel offers a powerful serverless platform that integrates seamlessly with EdgeDB.
+This combination allows for building and deploying lightning-fast web applications
+with a focus on developer experience. This means deploying SvelteKit projects with zero configuration and providing access to additional services like Preview Deploymnets, Web analytics, Serverless Functions, and more.
+
+=== How We Used EdgeDB
+
+I believe choosing a single stack to build web applications is a great choice. In sticking to core technologies, standards, and innovation in the right places, we can move quickly and deliver products that are more maintainable by ourselves or our clients.
+During the hackathon, we leveraged the following EdgeDB features:
+
+// TODO update
+
+* cloud db with cli and library tooling AND web ui tools including built in AUTH
+* environment variables integration with Vercel
+* Database branching scheme enabling smoother scheme migrations and changes
+* Code based queries
+
+and more...
+
+
+=== Closing Thoughts Going Forward
+
+We were impressed by the ease of use and capabilities of Vercel and EdgeDB.
+For future projects, we're considering:
+
+* Exploring deeper integration between Vercel and EdgeDB features.
+* Utilizing EdgeDB's transactional capabilities for complex data operations. Test on more complex and higher volume apps.
+* Adding other features that a database can enable
+* Leveraging auth for CRM and more
+
+We're excited to see how this combination can empower developers to build even more
+performant and scalable applications!
+
+=== Look for updates and talks on this project
+
+I'll be sure and update with some links to any additional talks given around this project.
+
