@@ -1,11 +1,11 @@
 <script>
-  import Counter from './Counter.svelte';
+  // import Counter from './Counter.svelte';
   import welcome from '$lib/images/svelte-welcome.webp';
-  import welcomeFallback from '$lib/images/svelte-welcome.png';
+  import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Demo</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -14,18 +14,32 @@
     <span class="welcome">
       <picture>
         <source srcset={welcome} type="image/webp" />
-        <img src={welcomeFallback} alt="Welcome" />
+        <img src={welcome_fallback} alt="Welcome" />
       </picture>
     </span>
-
-    to your new<br />SvelteKit app
   </h1>
 
-  <h2>
-    try editing <strong>src/routes/+page.svelte</strong>
-  </h2>
+  <h2>App Demo</h2>
 
-  <Counter />
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/eEzD-Y97ges?si=W89z1WL5CEQVxi9s"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
 </section>
 
 <style>

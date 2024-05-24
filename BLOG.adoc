@@ -6,7 +6,7 @@
 :source-highlighter: rouge
 :source-linenums-option: true
 
-== May 23, 2024 ~ raul flores jr
+== May 25, 2024 ~ raul flores jr
 
 === Why Vercel with EdgeDB?
 
@@ -19,30 +19,28 @@ with a focus on developer experience. This means deploying SvelteKit projects wi
 I believe choosing a single stack to build web applications is a great choice. In sticking to core technologies, standards, and innovation in the right places, we can move quickly and deliver products that are more maintainable by ourselves or our clients.
 During the hackathon, we leveraged the following EdgeDB features:
 
-// TODO update
-
 * cloud db with cli and library tooling AND web ui tools including built in AUTH
 * environment variables integration with Vercel
 * Database branching scheme enabling smoother scheme migrations and changes
 * Code based queries
-
-and more...
-
 
 === Closing Thoughts Going Forward
 
 We were impressed by the ease of use and capabilities of Vercel and EdgeDB.
 For future projects, we're considering:
 
-* Exploring deeper integration between Vercel and EdgeDB features.
+* Further explore Vercel's integration with EdgeDB with respect to svelte 5 projects
 * Utilizing EdgeDB's transactional capabilities for complex data operations. Test on more complex and higher volume apps.
 * Adding other features that a database can enable
-* Leveraging auth for CRM and more
+** Leveraging auth for CRM
+** bringing in maker your own analytics or reportable logging tools vs what's available in the market
+* Understanding the cost implications of this stack compared to volume
+* Understanding traditional maintenance like backups, recovery, ...
 
-We're excited to see how this combination can empower developers to build even more
-performant and scalable applications!
+I'm excited to see how this combination can empower developers to build even more performant and scalable applications!
 
 === Look for updates and talks on this project
 
 I'll be sure and update with some links to any additional talks given around this project.
+This project if for proof of concept and gathering feedback. I intend to let users keep testing after it's in production. BUT not make any branch updated.
 

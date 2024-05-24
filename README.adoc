@@ -47,10 +47,34 @@ A fair use, derived work. A simplified getting started with his approach. Given 
 
 * 3 pages - demo, app, blog
 ** demo: video for recorded demo of entry
-** app:  one page with select action (something like define habit, track habit, review activity), sidebar/drawer for interaction/forms responsive to chosen action; for speed use an existing color scheme, no real branding or unified font approach yet.
-** blog: blog posts as automated ASCII doc to html to svelte page, why not. Try Ascidoctor via bun script prior to dev package script run.
+** app:  login email auth, one page with select action (something like define habit, track habit, review activity) or responsive grid of actions, forms details; for speed use an existing color scheme, no real branding or unified font approach yet.
+** blog: blog posts as automated ASCII doc to html to svelte page, why not. Try Asciidoctor via bun script prior to dev package script run.
 
-Leave demo app in place for now as working example; turn welcome into demo page, about into blog. Fast draft an entry and setup automatic conversion from adoc file.
+* [x] Leave demo app in place for now as working example; turn welcome into demo page with placeholder video, turn about into blog and draft blog but include in page later. Fast draft an entry in blog and setup automatic conversion from adoc file via predev package script.
+* [ ] Turn blog into blog page by including generate html into svelte page
+* [ ] Create an app page with simple grid of actions
+
+=== Data Requirement
+Support elastic habit definition and tracking where each habit has three specific applications each with three levels of success/intensity.
+
+[NOTE]
+.Creating Three Habits
+====
+. Start with top values
+. List out activities for say top seven
+. Make three choices to develop. “Use the broadest terms possible to cover multiple specific applications. Examples: garden, exercise, piano, woodworking (or even broader, crafting), creativity, cleaning, writing, relationships, mindfulness, healthy eating, reading, or any skill you want to build or area of focus (violin, juggling, soldering, engineering, home improvement, programming, public speaking, confidence, etc.), and so on.” — Elastic Habits: How to Create Smarter Habits That Adapt to Your Day by Stephen Guise https://a.co/0gwgMhI
+====
+
+Focus on three habits. Instead of score, just define as explained in chapter 9 of the book. Future scope should include aspects of sharing and enriched creation experience.
+
+image::stephen_guise_elastic_habits_in_seven_easy_steps.png[]
+
+Likely we should design something that lets you:
+
+* [ ] Log in to create or work with your data
+* [ ] Describe a habit - create new habit and describe it's vertical & horizontal activities; 3 levels of intensity/success - minimum/mini, medium/plus, maximum/elite AND 3 specific applications for each habit.
+* [ ] Log - Track a habit - log an activity that was described in the previous step maybe include comments for that entry?
+* [ ] Review logged and missing days - maybe simple counts (later make filterable date range or month), perhaps the additional comments are nice to see here.
 
 == WIP - Work In Progress Checklists
 Instead of loads of design, I'll update this readme to reflect the progress and use a GitFlow workflow pushing Main branch releases to GitHub. The repo is private now, but I will likely make it public for entry to the contest and to gather feedback.
@@ -68,8 +92,8 @@ Instead of loads of design, I'll update this readme to reflect the progress and 
 [%interactive]
 .DO NEXT DESIGN
 * [x] outline the README.adoc for scoping and deploying an entry for the hackathon with an eye to continue project in another context after getting feedback
-* [ ] add pre dev script with bun script to convert adoc to html AND include into a page in the web app; let's try this for the blog instead of the readme as visitors can go to the repo for that.
-* [ ] add some issues for the required in scope requirements for submission
+* [x] add pre dev script with bun script to convert adoc to html
+* [x] add some issues for the required in scope requirements for submission
 
 [%interactive]
 .DO NEXT IMPLEMENTATION
