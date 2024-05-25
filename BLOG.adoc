@@ -2,7 +2,6 @@
 :toc: left
 :icons: font
 :toclevels: 4
-:imagesdir: adoc_images
 :source-highlighter: rouge
 :source-linenums-option: true
 

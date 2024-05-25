@@ -19,7 +19,7 @@
     </span>
   </h1>
 
-  <div class="w-full h-screen">
+  <div class="w-full h-screen" title="demo-video" data-demo-is-final="false">
     <iframe
       class="w-full aspect-video border-none"
       src="https://www.youtube-nocookie.com/embed/eEzD-Y97ges?si=W89z1WL5CEQVxi9s"

@@ -3,6 +3,6 @@
   <meta name="description" content="About making this app" />
 </svelte:head>
 
-<div class="w-full h-screen">
+<div class="w-full h-screen" title="blog-iframe-container">
   <iframe title="blog" src="/blog.html" class="w-full h-full border-none"></iframe>
 </div>

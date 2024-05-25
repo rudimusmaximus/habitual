@@ -19,6 +19,9 @@
       <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
         <a href="/">Demo</a>
       </li>
+      <li aria-current={$page.url.pathname.startsWith('/habitual') ? 'page' : undefined}>
+        <a href="/habitual">Habitual</a>
+      </li>
       <li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
         <a href="/sverdle">Sverdle</a>
       </li>
@@ -32,7 +35,7 @@
   </nav>
 
   <div class="corner">
-    <a href="https://github.com/sveltejs/kit">
+    <a href="https://github.com/rudimusmaximus/habitual">
       <img src={github} alt="GitHub" />
     </a>
   </div>

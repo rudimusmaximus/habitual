@@ -2,6 +2,9 @@
 # command is zellij --lyout workspace.kdl if using this file
 # workspace.kdl
 
+# ignore playwright's generated files
+test-results/
+
 # Ignore files written by nvim plugins in my local project
 fugitive:
 term:
