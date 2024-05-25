@@ -1,7 +1,7 @@
 {
   "name": "habitual",
   "description": "The practice better habits app - a roof of concept.",
-  "version": "0.1.1-scope.2",
+  "version": "0.1.1-blog.0",
   "devDependencies": {
     "@fontsource/fira-mono": "^4.5.10",
     "@neoconfetti/svelte": "^1.0.0",
@@ -28,7 +28,7 @@
     "vite": "^5.0.3"
   },
   "scripts": {
-    "predev": "asciidoctor BLOG.adoc",
+    "predev": "asciidoctor BLOG.adoc -o ./static/blog.html",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
