@@ -19,7 +19,7 @@
     </span>
   </h1>
 
-  <div class="w-full h-screen" title="demo-video" data-demo-is-final="false">
+  <div class="w-full" title="demo-video" data-demo-is-final="false">
     <iframe
       class="w-full aspect-video border-none"
       src="https://www.youtube-nocookie.com/embed/eEzD-Y97ges?si=W89z1WL5CEQVxi9s"
@@ -33,14 +33,6 @@
 </section>
 
 <style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.6;
-  }
-
   h1 {
     width: 100%;
   }

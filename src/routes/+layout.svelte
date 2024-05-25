@@ -13,7 +13,7 @@
 
   <footer>
     <p>
-      email <a href="mailto:habitual+raul@raulfloresjr.com">habitual+raul@raulfloresjr.com</a> for feedback
+      <a href="https://github.com/rudimusmaximus">@rudimusmaximus</a> find me on GitHub
     </p>
   </footer>
 </div>
