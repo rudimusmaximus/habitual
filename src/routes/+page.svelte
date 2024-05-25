@@ -19,23 +19,13 @@
     </span>
   </h1>
 
-  <h2>App Demo</h2>
-
-  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+  <div class="w-full h-screen">
     <iframe
-      width="560"
-      height="315"
+      class="w-full aspect-video border-none"
       src="https://www.youtube-nocookie.com/embed/eEzD-Y97ges?si=W89z1WL5CEQVxi9s"
       title="YouTube video player"
       frameborder="0"
-      allow="
-        accelerometer;
-        autoplay;
-        clipboard-write;
-        encrypted-media;
-        gyroscope;
-        picture-in-picture;
-      "
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
