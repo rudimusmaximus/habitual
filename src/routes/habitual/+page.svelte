@@ -1,5 +1,5 @@
 <script>
-  import {enhance} from '$app/forms';
+  // import {enhance} from '$app/forms';
 </script>
 
 <svelte:head>
@@ -7,23 +7,14 @@
   <meta name="description" content="The Practice Better Habits App" />
 </svelte:head>
 
-<h1 class="visually-hidden">Sverdle</h1>
+<h1 title="header">Make good choices!</h1>
 
-<form
-  method="POST"
-  action="?/enter"
-  use:enhance={() => {
-    // prevent default callback from resetting the form
-    return ({update}) => {
-      update({reset: false});
-    };
-  }}
->
-  <a class="how-to" href="/habitual/how-to">define a flexible habit</a>
-</form>
+<div class="actions-container">
+  <a class="how-to" href="/habitual/how-to">How to define a flexible habit</a>
+</div>
 
 <style>
-  form {
+  .actions-container {
     width: 100%;
     height: 100%;
     display: flex;
