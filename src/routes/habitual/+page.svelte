@@ -1,10 +1,33 @@
 <script>
   import {goto} from '$app/navigation';
 
-  function handleHelpClick() {
-    goto('/habitual/how-to');
+  /**
+   *
+   */
+  function handleDefineClick() {
+    goto('/habitual/define');
   }
-  // import {enhance} from '$app/forms';
+
+  /**
+   *
+   */
+  function handleHelpClick() {
+    goto('/habitual/help');
+  }
+
+  /**
+   *
+   */
+  function handleLogClick() {
+    goto('/habitual/log');
+  }
+
+  /**
+   *
+   */
+  function handleReviewClick() {
+    goto('/habitual/review');
+  }
 </script>
 
 <svelte:head>
@@ -27,12 +50,13 @@
         class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white"
       >
         <div class="flex-1 truncate px-4 py-2 text-sm">
-          <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Define</a>
+          <a href="/habitual/define" class="font-medium text-gray-900 hover:text-gray-600">Define</a>
           <p class="text-gray-500">'you can do it'</p>
         </div>
         <div class="flex-shrink-0 pr-2">
           <button
             type="button"
+            onclick={handleDefineClick}
             class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             <span class="sr-only">Open options</span>
@@ -55,12 +79,13 @@
         class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white"
       >
         <div class="flex-1 truncate px-4 py-2 text-sm">
-          <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Log</a>
+          <a href="/habitual/log" class="font-medium text-gray-900 hover:text-gray-600">Log</a>
           <p class="text-gray-500">'you did it'</p>
         </div>
         <div class="flex-shrink-0 pr-2">
           <button
             type="button"
+            onclick={handleLogClick}
             class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             <span class="sr-only">Open options</span>
@@ -83,12 +108,13 @@
         class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white"
       >
         <div class="flex-1 truncate px-4 py-2 text-sm">
-          <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Review</a>
+          <a href="/habitual/review" class="font-medium text-gray-900 hover:text-gray-600">Review</a>
           <p class="text-gray-500">'bask in your greatness'</p>
         </div>
         <div class="flex-shrink-0 pr-2">
           <button
             type="button"
+            onclick={handleReviewClick}
             class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             <span class="sr-only">Open options</span>
@@ -111,7 +137,7 @@
         class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white"
       >
         <div class="flex-1 truncate px-4 py-2 text-sm">
-          <a href="/habitual/how-to" class="font-medium text-gray-900 hover:text-gray-600">Help</a>
+          <a href="/habitual/help" class="font-medium text-gray-900 hover:text-gray-600">Help</a>
           <p class="text-gray-500">'learn about flexible habits'</p>
         </div>
         <div class="flex-shrink-0 pr-2">

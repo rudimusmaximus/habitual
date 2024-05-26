@@ -4,5 +4,5 @@
 </svelte:head>
 
 <div class="w-full h-screen" title="blog-iframe-container">
-  <iframe title="how-to" src="/how_to.html" class="w-full h-full border-none"></iframe>
+  <iframe title="how-to" src="/help.html" class="w-full h-full border-none"></iframe>
 </div>

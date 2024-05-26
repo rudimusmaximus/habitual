@@ -1,13 +1,12 @@
 <script>
   import {page} from '$app/stores';
-  import logo from '$lib/images/svelte-logo.svg';
   import github from '$lib/images/github.svg';
 </script>
 
 <header>
   <div class="corner">
-    <a href="https://kit.svelte.dev">
-      <img src={logo} alt="SvelteKit" />
+    <a href="https://github.com/rudimusmaximus/habitual">
+      <img src={github} alt="GitHub" />
     </a>
   </div>
 
@@ -21,9 +20,6 @@
       </li>
       <li aria-current={$page.url.pathname.startsWith('/habitual') ? 'page' : undefined}>
         <a href="/habitual">Habitual</a>
-      </li>
-      <li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-        <a href="/sverdle">Sverdle</a>
       </li>
       <li aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
         <a href="/blog">Blog</a>

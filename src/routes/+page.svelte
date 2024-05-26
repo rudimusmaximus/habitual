@@ -22,10 +22,10 @@
   <div class="w-full" title="demo-video" data-demo-is-final="false">
     <iframe
       class="w-full aspect-video border-none"
-      src="https://www.youtube-nocookie.com/embed/eEzD-Y97ges?si=W89z1WL5CEQVxi9s"
+      src="https://www.youtube-nocookie.com/embed/cbOQPH6PBDo?si=SGW83bm45DPcmShM"
       title="YouTube video player"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
