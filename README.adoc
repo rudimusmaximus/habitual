@@ -152,6 +152,11 @@ Because of Vercel, one can "deploy your SvelteKit projects to Vercel with zero c
 * Work in progress
 * Start sooner
 * This exercise in scoping is very important for me
+* In EdgeDB 5, databases were replaced by branches... and i think projects by modules? TODO
+
+image::edgedb_5_dbs_are_branches.png[]
+
+* went to cloud.edgedb.com and added gh integration to this repo where i could also create an instance for this project. VERY NICE.
 
 == USER FEEDBACK
 * will have to wait for that.
