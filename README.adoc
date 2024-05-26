@@ -102,9 +102,9 @@ Instead of loads of design, I'll update this readme to reflect the progress and 
 .DO NEXT IMPLEMENTATION
 * [x] Add pages and routes (see design section) - help is done,D,L,R next
 * [x] Add db schema and data, actions, habits, user and user auth
-* [ ] Test the database moving from dev inside a feature branch to main, then feature branch again
 * [x] Setup Vercel to deploy the app, set to deploy on github post
-* [ ] Test dev, build, preview - issues with build and preview; integrations complete; testing.
+* [x] Test dev, build, preview - issues with build and preview; integrations complete; testing. Resolved, clean dev, build, preview.
+* [ ] Test the database moving from dev inside a feature branch to main, then feature branch again
 * [ ] Need more time for auth and schema testing before finishing the pages that interact wiht the db
 
 == Development Flow

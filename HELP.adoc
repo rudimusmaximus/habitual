@@ -1,6 +1,6 @@
 = Elastic habits are the best!
 :icons: font
-:imagesdir: ./src/lib/images
+:imagesdir: ./
 
 Based on the book "Elastic Habits: How to Create Smarter Habits That Adapt to Your Day" by Stephen Guise.
 
