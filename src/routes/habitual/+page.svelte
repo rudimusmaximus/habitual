@@ -12,7 +12,7 @@
   <meta name="description" content="The Practice Better Habits App" />
 </svelte:head>
 
-<h1 title="header" class="pb-4 text-gray-600">Make good choices!</h1>
+<h1 title="header" class="py-4 text-gray-600">Make good choices!</h1>
 
 <div>
   <h2 class="text-sm font-medium text-gray-500">Available actions</h2>

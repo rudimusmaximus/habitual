@@ -51,8 +51,9 @@ A fair use, derived work. A simplified getting started with his approach. Given 
 ** blog: blog posts as automated ASCII doc to html to svelte page, why not. Try Asciidoctor via bun script prior to dev package script run.
 
 * [x] Leave demo app in place for now as working example; turn welcome into demo page with placeholder video, turn about into blog and draft blog but include in page later. Fast draft an entry in blog and setup automatic conversion from adoc file via predev package script.
-* [ ] Turn blog into blog page by including generate html into svelte page
-* [ ] Create an app page with simple grid of actions
+* [x] Turn blog into blog page by including generate html into svelte page
+* [x] Create an app page with simple grid of actions
+* [x] Create how-to page in same manner as blog using some readme materials
 
 === Data Requirement
 Support elastic habit definition and tracking where each habit has three specific applications each with three levels of success/intensity.
@@ -75,6 +76,7 @@ Likely we should design something that lets you:
 * [ ] Describe a habit - create new habit and describe it's vertical & horizontal activities; 3 levels of intensity/success - minimum/mini, medium/plus, maximum/elite AND 3 specific applications for each habit.
 * [ ] Log - Track a habit - log an activity that was described in the previous step maybe include comments for that entry?
 * [ ] Review logged and missing days - maybe simple counts (later make filterable date range or month), perhaps the additional comments are nice to see here.
+Note: these became Define, Log, Review, and Help.
 
 == WIP - Work In Progress Checklists
 Instead of loads of design, I'll update this readme to reflect the progress and use a GitFlow workflow pushing Main branch releases to GitHub. The repo is private now, but I will likely make it public for entry to the contest and to gather feedback.
@@ -97,7 +99,7 @@ Instead of loads of design, I'll update this readme to reflect the progress and 
 
 [%interactive]
 .DO NEXT IMPLEMENTATION
-* [ ] Add pages and routes (see design section)
+* [ ] Add pages and routes (see design section) - help is done,D,L,R next
 * [ ] Add db schema and data, actions, habits, user and user auth
 * [ ] Test the database moving from dev inside a feature branch to main, then feature branch again
 * [ ] Setup Vercel to deploy the app
@@ -141,10 +143,18 @@ Because of Vercel, one can "deploy your SvelteKit projects to Vercel with zero c
 ** work in progress: svelte-inspector is disabled until dev mode implements node to code mapping
 
 === During Design
+* start sooner
+* need to explore making entire cards hot for action, links ok; maybe at least add links to the single letters if time permits
+* auth is conceptually easy but we will have to depend on the example; enable option in scheme and leverage a single user type throughout with owned or created by
+* long ago i cloned a favorite tool and deployed it on vercel with their setup example it was very easy, so let's hope that happens here; I need time for the data
 
 === During Implementation
+* Work in progress
+* Start sooner
+* This exercise in scoping is very important for me
 
 == USER FEEDBACK
+* will have to wait for that.
 
 == CONCLUSION
 Thanks for reviewing my submission! I'm a big fan of both sponsors and look forward to your feedback.
