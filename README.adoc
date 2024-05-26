@@ -72,10 +72,11 @@ image::stephen_guise_elastic_habits_in_seven_easy_steps.png[]
 
 Likely we should design something that lets you:
 
-* [ ] Log in to create or work with your data
-* [ ] Describe a habit - create new habit and describe it's vertical & horizontal activities; 3 levels of intensity/success - minimum/mini, medium/plus, maximum/elite AND 3 specific applications for each habit.
-* [ ] Log - Track a habit - log an activity that was described in the previous step maybe include comments for that entry?
-* [ ] Review logged and missing days - maybe simple counts (later make filterable date range or month), perhaps the additional comments are nice to see here.
+* Log in to create or work with your data
+* Describe a habit - create new habit and describe it's vertical & horizontal activities; 3 levels of intensity/success - minimum/mini, medium/plus, maximum/elite AND 3 specific applications for each habit.
+* Log - Track a habit - log an activity that was described in the previous step maybe include comments for that entry?
+* Review logged and missing days - maybe simple counts (later make filterable date range or month), perhaps the additional comments are nice to see here.
+
 Note: these became Define, Log, Review, and Help.
 
 == WIP - Work In Progress Checklists
@@ -99,13 +100,14 @@ Instead of loads of design, I'll update this readme to reflect the progress and 
 
 [%interactive]
 .DO NEXT IMPLEMENTATION
-* [ ] Add pages and routes (see design section) - help is done,D,L,R next
-* [ ] Add db schema and data, actions, habits, user and user auth
+* [x] Add pages and routes (see design section) - help is done,D,L,R next
+* [x] Add db schema and data, actions, habits, user and user auth
 * [ ] Test the database moving from dev inside a feature branch to main, then feature branch again
-* [ ] Setup Vercel to deploy the app
-* [ ] Test dev, build, preview
+* [x] Setup Vercel to deploy the app, set to deploy on github post
+* [ ] Test dev, build, preview - issues with build and preview; integrations complete; testing.
+* [ ] Need more time for auth and schema testing before finishing the pages that interact wiht the db
 
-== Dev Flow
+== Development Flow
 
 I use semver, with the GitFlow approach (main and develop) with feature, hotfix, and release branches. When main is updated locally, it is pushed to the GitHub release branch. When main is updated on GitHub, it is pushed to the GitHub develop branch. When main is updated on GitHub, it is pushed to the GitHub main branch.
 In the future, I may want to adopt pull request scheme from main to GitHub. This current approach is great for small teams and certainly for a team of one.
@@ -135,6 +137,8 @@ See link:https://vercel.com/docs/frameworks/sveltekit
 Because of Vercel, one can "deploy your SvelteKit projects to Vercel with zero configuration, enabling you to use Preview Deployments, Web Analytics, Serverless Functions, and more".
 
 == LESSONS LEARNED
+I was able to complete Vercel Integration linking my Vercel project to EdgeDB instances on clould.edgedb.com. Vercel will manage EDGEDB_INSTANCE and EDGEDB_SECRET_KEY environment variables for me. This allows EdgeDB client libraries to securely and seamlessly connect o my EdgeDB Cloud instances.  Also, GitHub is integregated in that my GH repositories are linked to EDB such that when I crate a new branch in GH, a new branch in the DB is created for it. The idea is that EDB will keep the branch schema changes up to date with migrations made in them when or as I push changes to my GH branch. I will be testing this with great interest.
+
 
 === During Setup
 * Note: bun run without the -b flag will default to run in node environment. You can still use -b for say scripts or installs and updates.
@@ -143,10 +147,12 @@ Because of Vercel, one can "deploy your SvelteKit projects to Vercel with zero c
 ** work in progress: svelte-inspector is disabled until dev mode implements node to code mapping
 
 === During Design
-* start sooner
-* need to explore making entire cards hot for action, links ok; maybe at least add links to the single letters if time permits
-* auth is conceptually easy but we will have to depend on the example; enable option in scheme and leverage a single user type throughout with owned or created by
-* long ago i cloned a favorite tool and deployed it on vercel with their setup example it was very easy, so let's hope that happens here; I need time for the data
+* Start sooner
+* Need to explore making entire cards hot for action, links ok; maybe at least add links to the single letters if time permits
+* Auth is conceptually easy but we will have to depend on the example; enable option in scheme and leverage a single user type throughout with owned or created by
+* Long ago i cloned a favorite tool and deployed it on vercel with their setup example it was very easy, so let's hope that happens here; I need time for the data
+* Interesting challenges trying to work with consrtaints in my schema; No, the syntax constraint exclusive on .habit on .intensity_type; is not valid in EdgeDB. Edgedb scheme may not currently support composite exclusivity (i.e., ensuring uniqueness across multiple properties or links). TODO verify. So some constraints, would need to be enforced at the application level.
+
 
 === During Implementation
 * Work in progress
@@ -157,6 +163,13 @@ Because of Vercel, one can "deploy your SvelteKit projects to Vercel with zero c
 image::edgedb_5_dbs_are_branches.png[]
 
 * went to cloud.edgedb.com and added gh integration to this repo where i could also create an instance for this project. VERY NICE.
+* added my project to vercel
+* went pro for cloud.edgedb.com as i had one test project that used up free tier
+* need more time to finish testing schema and auth; i got a draft schema migrated; I can log into cloud and see schema in instance
+* I'm out of time to learn auth and get the new schema going at the same time
+* pushing the rest and submitting for comment.
+* trying to shake out the working vercel deployment so i can get feedback.
+* was able to make all the integrations (see note above on lessons learned)
 
 == USER FEEDBACK
 * will have to wait for that.
