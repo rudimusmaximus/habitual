@@ -1,0 +1,55 @@
+= The Practice Better Habits Blog
+:toc: left
+:icons: font
+:toclevels: 4
+:source-highlighter: rouge
+:source-linenums-option: true
+
+== May 25, 2024
+
+=== Why Vercel with EdgeDB?
+
+Vercel offers a powerful serverless platform that integrates seamlessly with EdgeDB.
+This combination allows for building and deploying lightning-fast web applications
+with a focus on developer experience. This means deploying SvelteKit projects with near zero configuration and providing access to additional services like Preview Deploymnets, Web analytics, Serverless Functions, and more.
+
+=== How This Project Makes Use of EdgeDB
+
+I believe choosing a single stack to build web applications is a great choice. In sticking to core technologies, standards, and innovation in the right places, companies with strong methods can move quickly and deliver products that are more maintainable by their makers or their clients.
+During the hackathon, the following EdgeDB features were used:
+
+* Cloud db with cli and library tooling AND web ui tools including built in AUTH
+* Environment variable integration with Vercel
+* Database branching integration with Github, enabling smoother scheme migrations and changes
+* Code based queries - javascript with JSDOC for types BUT because we are using svelte which can support TS in the script tags of a svelte page, we could make use of code based queries.
+
+=== Closing Thoughts Going Forward
+
+We were impressed by the ease of use and capabilities of Vercel and EdgeDB. This proof of concept was an exercise in scoping a small project while documenting our progress and establishing a structure for ongoing improvement for feedback and brainstorming.
+Future projects to consider:
+
+* Further explore Vercel's integration with EdgeDB with respect to svelte 5 projects
+* Utilizing EdgeDB's transactional capabilities for complex data operations by testing more complex and higher volume apps.
+* Adding other features that a database can enable
+** Leveraging auth for CRM
+** Bringing in make your own analytics or reportable logging tools vs or in complement to what's available in the market
+* Understanding the cost considerations of this stack
+* Understanding traditional maintenance like backups, recovery, ...
+
+I'm excited to see how this combination can empower developers to build even more performant and scalable applications!
+
+=== Look for updates and talks on this project
+
+I'll be sure and update with some links to any additional talks given around this project.
+This project is for proof of concept and gathering feedback. I intend to let users keep testing after it's in production, but not make any branch updates during judging.
+This will allow for more time for users or reviewers to try out across a few days.
+
+== PS
+
+This is my first hackathon, and my first project with authentication. Work was scoped to fit into a very short time period and this was a team of one. That said, the edgeDB and Svelte comunities are wonderful. I am looking forward to having more interaction with the Vercel team as they seem like a similar group. Thanks for having this contest.
+
+And, thank you for your time and consideration.
+
+~ raul flores jr "rudy" @rudimusmaximus
+  Dallas, Texas
+

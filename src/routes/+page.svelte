@@ -1,11 +1,11 @@
 <script>
-  import Counter from './Counter.svelte';
+  // import Counter from './Counter.svelte';
   import welcome from '$lib/images/svelte-welcome.webp';
-  import welcomeFallback from '$lib/images/svelte-welcome.png';
+  import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Demo</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -14,29 +14,25 @@
     <span class="welcome">
       <picture>
         <source srcset={welcome} type="image/webp" />
-        <img src={welcomeFallback} alt="Welcome" />
+        <img src={welcome_fallback} alt="Welcome" />
       </picture>
     </span>
-
-    to your new<br />SvelteKit app
   </h1>
 
-  <h2>
-    try editing <strong>src/routes/+page.svelte</strong>
-  </h2>
-
-  <Counter />
+  <div class="w-full" title="demo-video" data-demo-is-final="false">
+    <iframe
+      class="w-full aspect-video border-none"
+      src="https://www.youtube-nocookie.com/embed/eEzD-Y97ges?si=W89z1WL5CEQVxi9s"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
 </section>
 
 <style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.6;
-  }
-
   h1 {
     width: 100%;
   }

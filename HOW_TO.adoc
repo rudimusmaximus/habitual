@@ -1,0 +1,29 @@
+= Elastic habits are the best!
+:icons: font
+:imagesdir: ./src/lib/images
+
+Based on the book "Elastic Habits: How to Create Smarter Habits That Adapt to Your Day" by Stephen Guise.
+
+[NOTE]
+.Creating Three Habits
+====
+. Start with top values
+. List out activities for say top seven
+. Make three choices to develop. “Use the broadest terms possible to cover multiple specific applications. Examples: garden, exercise, piano, woodworking (or even broader, crafting), creativity, cleaning, writing, relationships, mindfulness, healthy eating, reading, or any skill you want to build or area of focus (violin, juggling, soldering, engineering, home improvement, programming, public speaking, confidence, etc.), and so on.” — Elastic Habits: How to Create Smarter Habits That Adapt to Your Day by Stephen Guise https://a.co/0gwgMhI
+====
+
+image::stephen_guise_elastic_habits_in_seven_easy_steps.png[]
+
+== Quick Start
+* Start with a single habit and work your way up (3 is said to be ideal)
+* Each habit should have three ways to apply them (applications that give you lateral options; for example: practice, study, play)
+* Each application should have three levels of success/intensity (mini, plus, elite)
+
+In a hurry? Take the example and enter that one as your first.
+Log some activities and view them anytime.
+
+Note: This is a proof of concept and your entries might be seen  by developers.
+
+== USER FEEDBACK
+Send feedback to "habitual+raul@raulfloresjr.com"
+
