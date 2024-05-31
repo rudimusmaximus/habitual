@@ -1,7 +1,7 @@
 {
   "name": "habitual",
   "description": "The practice better habits app - a roof of concept.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "devDependencies": {
     "@fontsource/fira-mono": "^4.5.10",
     "@neoconfetti/svelte": "^1.0.0",
@@ -32,7 +32,8 @@
   "scripts": {
     "predev": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
     "dev": "vite dev",
-    "build": "vite build",
+    "prebuild": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
+    "build": "svelte-kit sync && vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
