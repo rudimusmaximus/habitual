@@ -21,6 +21,7 @@ During the hackathon, the following EdgeDB features were used:
 * Cloud db with cli and library tooling AND web ui tools including built in AUTH
 * Environment variable integration with Vercel
 * Database branching integration with Github, enabling smoother scheme migrations and changes
+TODO test with and without the ts in the script tag of the svelte files with more data and structures.
 * Code based queries - javascript with JSDOC for types BUT because we are using svelte which can support TS in the script tags of a svelte page, we could make use of code based queries.
 
 === Closing Thoughts Going Forward
