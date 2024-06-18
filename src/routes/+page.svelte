@@ -1,7 +1,7 @@
 <script>
   // import Counter from './Counter.svelte';
   import welcome from '$lib/images/svelte-welcome.webp';
-  import welcome_fallback from '$lib/images/svelte-welcome.png';
+  import welcomeFallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
@@ -14,18 +14,21 @@
     <span class="welcome">
       <picture>
         <source srcset={welcome} type="image/webp" />
-        <img src={welcome_fallback} alt="Welcome" />
+        <img src={welcomeFallback} alt="Welcome" />
       </picture>
     </span>
   </h1>
 
-  <div class="w-full" title="demo-video" data-demo-is-final="false">
+  <div class="w-full" title="demo-video" data-demo-is-final="true">
     <iframe
       class="w-full aspect-video border-none"
       src="https://www.youtube-nocookie.com/embed/cbOQPH6PBDo?si=SGW83bm45DPcmShM"
       title="YouTube video player"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow="accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>

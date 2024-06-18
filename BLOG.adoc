@@ -21,8 +21,8 @@ During the hackathon, the following EdgeDB features were used:
 * Cloud db with cli and library tooling AND web ui tools including built in AUTH
 * Environment variable integration with Vercel
 * Database branching integration with Github, enabling smoother scheme migrations and changes
-TODO test with and without the ts in the script tag of the svelte files with more data and structures.
 * Code based queries - javascript with JSDOC for types BUT because we are using svelte which can support TS in the script tags of a svelte page, we could make use of code based queries.
+** TODO test with and without the ts in the script tag of the svelte files with more data and structures.
 
 === Closing Thoughts Going Forward
 
@@ -30,12 +30,12 @@ We were impressed by the ease of use and capabilities of Vercel and EdgeDB. This
 Future projects to consider:
 
 * Further explore Vercel's integration with EdgeDB with respect to svelte 5 projects
-* Utilizing EdgeDB's transactional capabilities for complex data operations by testing more complex and higher volume apps.
-* Adding other features that a database can enable
+* Utilize EdgeDB's transactional capabilities for complex data operations by testing more complex and higher volume apps.
+* Add other features that a database can enable
 ** Leveraging auth for CRM
 ** Bringing in make your own analytics or reportable logging tools vs or in complement to what's available in the market
-* Understanding the cost considerations of this stack
-* Understanding traditional maintenance like backups, recovery, ...
+* Understand the cost considerations of this stack
+* Understand traditional maintenance like backups, recovery, ...
 
 I'm excited to see how this combination can empower developers to build even more performant and scalable applications!
 

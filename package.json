@@ -1,7 +1,20 @@
 {
   "name": "habitual",
   "description": "The practice better habits app - a roof of concept.",
-  "version": "0.1.5",
+  "version": "0.1.6-iframe.0",
+  "type": "module",
+  "scripts": {
+    "predev": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
+    "dev": "vite dev",
+    "prebuild": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
+    "build": "svelte-kit sync && vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "test": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "@fontsource/fira-mono": "^4.5.10",
     "@neoconfetti/svelte": "^1.0.0",
@@ -28,18 +41,5 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.0.0",
     "vite": "^5.0.3"
-  },
-  "scripts": {
-    "predev": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
-    "dev": "vite dev",
-    "prebuild": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
-    "build": "svelte-kit sync && vite build",
-    "preview": "vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-    "test": "playwright test",
-    "lint": "prettier --check . && eslint .",
-    "format": "prettier --write ."
-  },
-  "type": "module"
+  }
 }
