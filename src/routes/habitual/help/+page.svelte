@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>How to play define a flexible habit</title>
+  <title>How to define a flexible habit</title>
   <meta name="description" content="How to define a flexible habit" />
 </svelte:head>
 
