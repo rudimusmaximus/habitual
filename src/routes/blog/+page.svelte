@@ -31,7 +31,7 @@
           </h3>
           <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
             If you've never entered a hackathon, you should! I found it a humbling exercise in scoping while
-            learning new things. Please read our notes and watch this space for future updates.
+            learning new things...
           </p>
         </div>
         <div class="relative mt-8 flex items-center gap-x-4">
