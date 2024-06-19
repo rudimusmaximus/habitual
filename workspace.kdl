@@ -5,22 +5,26 @@
  */
 
 layout {
-    tab name="dashboard Habitual proof of concept" focus=true {
+    tab name="'Habitual' - EdgeDb & Vercel 2024 Hackathon" focus=true {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
         pane split_direction="vertical" {
-            pane stacked=true {
+            pane split_direction="horizontal" {
                 pane {
-                    name "Run git log -4"
-                    size "60%"
+                    name "Run git log -3"
+                    size "40%"
                     cwd "~/project/habitual"
                     command "git"
                     args "log" "-4"
                 }
                 pane {
-                    name "terminal"
+                    name "Run dev "
                     cwd "~/project/habitual"
+                    size "60%"
+                    cwd "~/project/habitual"
+                    command "bun"
+                    args "run" "dev" "--open"
                 }
             }
             pane split_direction="horizontal" {
@@ -51,7 +55,7 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab name="nvim session  habitual" {
+    tab name="nvim session" {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }

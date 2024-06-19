@@ -1,10 +1,10 @@
 {
   "name": "habitual",
   "description": "The practice better habits app - a roof of concept.",
-  "version": "0.1.6-iframe.2",
+  "version": "0.1.6-iframe.3",
   "type": "module",
   "scripts": {
-    "predev": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
+    "predev": "asciidoctor blog_entry_2024_may_25.adoc -o ./static/blog_entry_2024_may_25.html && asciidoctor HELP.adoc -o ./static/help.html",
     "dev": "vite dev",
     "prebuild": "asciidoctor BLOG.adoc -o ./static/blog.html && asciidoctor HELP.adoc -o ./static/help.html",
     "build": "svelte-kit sync && vite build",

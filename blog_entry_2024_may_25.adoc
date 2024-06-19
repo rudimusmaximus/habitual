@@ -1,19 +1,13 @@
-= The Practice Better Habits Blog
-:toc: left
+= May 25, 2024 Hackathon Entry
 :icons: font
-:toclevels: 4
-:source-highlighter: rouge
-:source-linenums-option: true
 
-== May 25, 2024
-
-=== Why Vercel with EdgeDB?
+== Why Vercel with EdgeDB?
 
 Vercel offers a powerful serverless platform that integrates seamlessly with EdgeDB.
 This combination allows for building and deploying lightning-fast web applications
 with a focus on developer experience. This means deploying SvelteKit projects with near zero configuration and providing access to additional services like Preview Deploymnets, Web analytics, Serverless Functions, and more.
 
-=== How This Project Makes Use of EdgeDB
+== How This Project Makes Use of EdgeDB
 
 I believe choosing a single stack to build web applications is a great choice. In sticking to core technologies, standards, and innovation in the right places, companies with strong methods can move quickly and deliver products that are more maintainable by their makers or their clients.
 During the hackathon, the following EdgeDB features were used:
@@ -24,7 +18,7 @@ During the hackathon, the following EdgeDB features were used:
 * Code based queries - javascript with JSDOC for types BUT because we are using svelte which can support TS in the script tags of a svelte page, we could make use of code based queries.
 ** TODO test with and without the ts in the script tag of the svelte files with more data and structures.
 
-=== Closing Thoughts Going Forward
+== Closing Thoughts Going Forward
 
 We were impressed by the ease of use and capabilities of Vercel and EdgeDB. This proof of concept was an exercise in scoping a small project while documenting our progress and establishing a structure for ongoing improvement for feedback and brainstorming.
 Future projects to consider:
@@ -39,7 +33,7 @@ Future projects to consider:
 
 I'm excited to see how this combination can empower developers to build even more performant and scalable applications!
 
-=== Look for updates and talks on this project
+== Look for updates and talks on this project
 
 I'll be sure and update with some links to any additional talks given around this project.
 This project is for proof of concept and gathering feedback. I intend to let users keep testing after it's in production, but not make any branch updates during judging.
