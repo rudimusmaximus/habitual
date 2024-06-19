@@ -1,7 +1,7 @@
 {
   "name": "habitual",
   "description": "The practice better habits app - a roof of concept.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "module",
   "scripts": {
     "predev": "asciidoctor blog_entry_2024_may_25.adoc -o ./static/blog_entry_2024_may_25.html && asciidoctor HELP.adoc -o ./static/help.html",
